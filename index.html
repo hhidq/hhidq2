@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>总结</title>
+    <style>
+    #timu {
+        text-align: center;
+        font-size: 40px;
+    }
+    div {
+        size: 30px;
+        margin-left: 40px;
+    }
+    </style>
+</head>
+<body>
+    <div id="timu">html和css总结</div>
+    <h2>1.何为HTML</h2>
+    <div>HTML是超文本标记语言（HyperText Markup Language）的缩写。我们用 HTML 来构建 Web 页面即所谓的网页。</div>
+    <h2>2.html文档结构</h2>
+    <div>后缀名为html的文档</div>
+    <h2>3.html文档结构分析</h2>
+    div!DOCTYPE html声明文档类型。
+        html包含整个页面，所有其他元素都在其中<br>
+        head不出现在页面但是是搜索时的关键字或者一些声明<br>
+        meta charset="utf-8"字体类型<br>
+        link rel="shortcut icon" href="favicon.ico" type="image/x-icon"指定页面标签<br>
+        title页面名称<br>
+        body包含正文内容</div>
+    <h2>4.HTML文档相关说明</h2>
+    <div>p注释<br>
+        大部分标签具有开始和结束标签，但少部分没有结束标签如br、hr、input、img等等称之为空元素<br>
+        br换行<br>
+        hr水平分割线<br>
+        input输入框<br>
+        元素还具有属性，多个属性用逗号分隔</div>
+    <h2>5.标题</h2>
+    <div>h1 - h6
+        分别是从大到小的标题，标题主要起引导搜索的作用</div>
+    <h2>6.文本格式</h2>
+    <div>mark高亮标记<br>
+        del横线划掉<br>
+        s横线划掉<br>
+        ins下划线<br>
+        u下划线<br>
+        small字体变小<br>
+        strong字体加粗<br>
+        em斜体</div>
+    <h2>7.超链接a</h2>
+    <div>a href="https://www.baidu.com/" target="_blank"百度一下<br>
+        href后接要跳转的网站<br>
+        target属性为_blank表示在新的网页打开超链接<br>
+        文字是提供给用户点击的<br>
+        id对元素生成锚点可以接href成为超链接，跳转过去</div>
+    <h2>8.图片及文件路径img</h2>
+    <div> img src="https://mdbootstrap.com/img/logo/mdb192x192.jpg" alt="MDB Logo" width="200" height="200"<br>
+        src属性表示要显示的图片的位置url，及图片文件路径<br>
+        alt属性显示获取文件错误是显示的文字<br>
+        width  height可为图片指定高宽<br>
+        img src="picture.jpg"该图片文件与当前文档在同一目录中<br>
+        img src="./images/picture.jpg"该图片文件在当前目录下的images目录中<br>
+        img src="../picture.jpg"该图片文件在上一级目录中<br>
+        img src="/picture.jpg"该图片文件在网站 根目录中</div>
+    <h2>9.表格table</h2>
+    <div>页面的内容需要用表格来进行呈现我们使用table等标签即可<br>
+        tr表示行td表示行中单元th表示表头的单元会被加粗显示</div>
+    <h2>10.列表list</h2>
+    <div>无序列表使用ul标签，默认使用实心圆点作为每项的标志其它的标志可以是空心圆circle，实心方块square以及不出现标志。<br>
+        有序列表使用ol标签，默认使用数字作为每项的标志，其它的标志可以是大写字母A，小写字母a，罗马字母i等。</div>
+    <h2>11.表单form</h2>
+    <div>当网站需要获取我们的一些信息如：用户名、密码、选择买什么、买多少、提出意见等等时，我们就需要使用表单（form）来让用户填写或选择。<br>
+        placeholder输入框下显示的文字<br>
+        require要求此框必须填<br>
+        type=“password”属性是密码，输入的文字加密隐藏<br>
+        诸如此类还有number输入的必须是数字radio圆点选择value是下拉条选择checkbox方框选择date日期file文件选择<br>
+        value设置默认值</div>
+    <h2>12.其他</h2>
+    <div>区块元素在浏览器显示时，通常会以新行来开始（和结束）。如：h1, pre, ul, table，div 等。<br>
+        内联元素相反，他们总是一个接一个进行显示，不会新起一行。如： span, input, td, a, img等。<br>
+        pre此标签下你在vscode上咋写的就咋呈现<br>
+        在 HTML 中，某些字符是预留的。在 HTML 中不能使用小于号和大于号，这是因为浏览器会误认为它们是标签。如果希望正确地显示预留字符，我们必须在 HTML 源代码中使用字符实体</div>
+    <h2>1.何为css</h2>
+    <div>网页的内容是由 HTML的元素构建的，这些元素如何呈现，涉及许多方面，如整个页面的布局，元素的位置、距离、颜色、大小、是否显示、是否浮动、透明度等等。</div>
+    <h2>2.css语法</h2>
+    <div>Css由两部分组成：选择器和{}包裹得多条声明，选择器是要改变的对象，{}包含要声明的属性和值多条声明用;分隔。
+        选择器又有id选择器，在对象声明时赋予一个id属性，后面就以这个id名当选择器，还有class选择器，也是在声明对象时给一个class属性，但与id不同的是使用时要在前面加.</div>
+    <h2>3.css如何生效</h2>
+    <div>可在HTML表同一目录下建一个后缀名为css的表，也可以将css放在HTML的style中发挥作用，也可以直接把样式规则直接写到要应用的元素中</div>
+    <h2>4.颜色，尺寸，对齐</h2>
+    <div> 采用颜色名称也可以使用颜色RGB16进制值，来设定前景或背景的颜色使用background-color和color
+        用 height 和 width 设定元素内容占据的尺寸。常见的尺寸单位有：像数 px，百分比 %等。
+        对于元素中的文本，我们可以简单的设置text-align属性为left, center, right</div>
+    <h2>5.盒子模型</h2>
+    <div>盒子模型指的是一个 HTML 元素可以看作一个盒子。从内到外，这个盒子是由内容 content, 内边距 padding, 边框 border, 外边距 margin构成的，Content 盒子的内容，如文本、图片等，Padding 填充，也叫内边距，即内容和边框之间的区域，Border 边框，默认不显示，Margin 外边距，边框以外与其它元素的区域</div>
+    <h2>6.边框与边距</h2>
+    <div>border上下左右都相同，border-bottom只设置底部边框，border-radius边框圆角，border-left 只设置左边框
+        padding 上下左右都相同，padding-top 设置上部，-bottom设置下部，-right设置左部，-left设置右部，padding：x x x x按上右下左设置，padding：x x按上下和左右设置</div>
+    <h2>7.定位</h2>
+    <div>设置为静态定位position: static;，这是元素的默认定位方式，也即你设置与否，元素都将按正常的页面布局进行。<br>
+        设置为相对定位position: relative;，这将把元素相对于他的静态（正常）位置进行偏移<br>
+        设置为固定定位position: fixed;，这将使得元素固定不动（即使你上下左右拖动浏览器的滚动条）。此时元素固定的位置仍由top, bottom, left, right属性确定，但相对的是视口。<br>
+        设置为绝对定位position: absolute;，将使元素相对于其最近设置了定位属性（非static）的父元素进行偏移。如果该元素的所有父元素都没有设置定位属性，那么就相对于<body>这个父元素。</div>
+    <h2>8.溢出</h2>
+    <div>当元素内容超过其指定的区域时，我们通过溢出overflow属性来处理这些溢出的部分。
+        溢出属性有一下几个值：visible 默认值，溢出部分不被裁剪，在区域外面显示，hidden 裁剪溢出部分且不可见，scroll 裁剪溢出部分，但提供上下和左右滚动条供显示，auto 裁剪溢出部分，视情况提供滚动条</div>
+    <h2>9.浮动</h2>
+    <div>在一个区域或容器内，我们可以设置float属性让某元素水平方向上向左或右进行移动，其周围的元素也会重新排列。如果希望浮动元素后面的元素在其下方显示，可使用clear: both样式来进行清除。</div>
+    <h2>10.不透明</h2>
+    <div>我们可以用opacity对任何元素（不过常用于图片）设置不透明度。值在[0.0～1.0]之间，值越低，透明度越高，如下图所示：</div>
+    <h2>11.组合选择器</h2>
+    <div>以空格作为分隔，如：.haha p 代表在div元素内有.haha这种类的所有元素。也称为直接后代选择器，以>作为分隔，如：.haha > p 代表在有.haha类的元素内的直接p元素。</div>
+    <h2>12.伪类和伪元素</h2>
+    <div>伪类（pseudo-class）或伪元素（pseudo-element）用于定义元素的某种特定的状态或位置</div>
+</body>
+</html>
