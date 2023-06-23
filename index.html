@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简单美食教程</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        #div1 {
+            position: fixed;
+            width: 100%;
+            height: 60px;
+            background: rgba(199, 91, 28, 0.966);
+        }
+        #div2 {
+            background-image: url(https://img.zcool.cn/community/01bb1f5bd83979a8012092526c5973.jpg@1280w_1l_2o_100sh.jpg);
+            position:fixed;
+            top: 0;
+            left: 0;
+            width:100%;
+            height:100%;
+            min-width: 1000px;
+            z-index:-10;
+            zoom: 1;
+            background-color: #060606;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-position: center 0;
+        }
+        #photo_box{
+            width: 280px;
+            height: 400px;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top:0;
+            bottom: 0;
+            margin: 200px auto;
+            transform-style: preserve-3d;/*表示所有子元素在3D空间中呈现*/
+            transform: rotateX(-5deg) rotateY(0deg);
+            animation: run 45s linear infinite;/*循环执行run动画，每45秒执行一次*/
+        }
+
+        /*设置图像大小、边框、圆角、位置*/
+        #photo_box img{
+            width: 300px;
+            height: 350px;
+            border: 5px solid #ccc;
+            border-radius: 5px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /*依次设置图像盒子中每个图像旋转后位置*/
+        #photo_box img:nth-child(1){
+            transform: rotateY(0deg) translateZ(500px);
+        }
+        #photo_box img:nth-child(2){
+            transform: rotateY(60deg) translateZ(500px);
+        }
+        #photo_box img:nth-child(3){
+            transform: rotateY(120deg) translateZ(500px);
+        }
+        #photo_box img:nth-child(4){
+            transform: rotateY(180deg) translateZ(500px);
+        }
+        #photo_box img:nth-child(5){
+            transform: rotateY(240deg) translateZ(500px);
+        }
+        #photo_box img:nth-child(6){
+            transform: rotateY(300deg) translateZ(500px);
+        }
+      
+
+            /*采用@keyframes 规则创建run动画。*/
+        @keyframes run {
+            0%{transform: rotateX(0deg) rotateY(0deg);
+            }
+            25%{transform: rotateX(10deg) rotateY(90deg);
+            }
+            50%{transform: rotateX(0deg) rotateY(180deg);
+            }
+            75%{transform: rotateX(-10deg) rotateY(270deg);
+            }
+            100%{transform: rotateX(0deg) rotateY(360deg);
+            }
+        }
+        #text1 {
+            color:#1ad3e3;
+            text-align: center;/*水平居中*/
+            font-size: 40px;
+            font-style: italic;
+        }
+        #ye1 {
+            color: #1ad3e3;
+            margin-left: 50%;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <div id="text1">欢迎来到简单美食教程！
+        <a id="ye1" href="yemian1.html">点这里->番茄炒蛋</a></div>
+    </div>
+    <div id="div2">
+        <div id="photo_box">
+            <img src="https://ts1.cn.mm.bing.net/th/id/R-C.682f244460299523e59dc22bc039a667?rik=E%2biBPEfj7wDN6w&riu=http%3a%2f%2fseopic.699pic.com%2fphoto%2f50114%2f2624.jpg_wh1200.jpg&ehk=Hlm5bo3N8Rd7thtFBYDdrIQObtRltA3KGtq7dVtn3nc%3d&risl=&pid=ImgRaw&r=0">
+            <img src="https://pic.ecook.cn/web/2666816.jpg!wd780">
+            <img src="https://img.zcool.cn/community/0115835d8c2395a8012060bebec0cd.jpg@1280w_1l_2o_100sh.jpg">
+            <img src="https://cp1.douguo.com/upload/caiku/6/8/d/yuan_68f9e42d6a959a422fbfe86efad4f5ed.jpg">
+            <img src="https://ts1.cn.mm.bing.net/th/id/R-C.06965bcd1a0a0da7453dd5e70fadab47?rik=nkXjsU1G2hDyqQ&riu=http%3a%2f%2fs2.cdn.xiachufang.com%2ff05d39fe873711e6a9a10242ac110002_662w_440h.jpg%3fimageView2%2f2%2fw%2f660%2finterlace%2f1%2fq%2f90&ehk=hYLsAaFxPDQh92EovwZuPDco0dGdb1%2fh6JRjoEfZDvg%3d&risl=&pid=ImgRaw&r=0">                     
+            <img src="https://ts1.cn.mm.bing.net/th/id/R-C.aa52f92abec5c3434a328d09f004f976?rik=OpfAmYA%2bCSj7MA&riu=http%3a%2f%2fpic.ntimg.cn%2ffile%2f20200505%2f26872990_172301384036_2.jpg&ehk=7ry2udEgOAeOKpeYYcFyZNf3R7BSIrqZEKA2zo4%2f%2bN0%3d&risl=&pid=ImgRaw&r=0">
+        </div>
+    </div>
+</body>
+</html>
